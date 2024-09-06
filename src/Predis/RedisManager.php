@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Predis;
+namespace RateLimit\Predis;
 
 use Predis\Client as PredisClient;
 use Predis\Connection\ConnectionException;

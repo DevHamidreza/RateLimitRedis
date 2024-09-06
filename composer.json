@@ -3,7 +3,7 @@
     "description": "simple rate limit use Redis",
     "autoload": {
         "psr-4": {
-            "Devhamidreza\\Ratelimitredis\\": "src/"
+            "RateLimit\\": "src/"
         }
     },
     "authors": [

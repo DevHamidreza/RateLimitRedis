@@ -1,8 +1,9 @@
 <?php
 
-namespace Src;
+namespace RateLimit;
 
-use Src\Predis\RedisManager;
+
+use RateLimit\Predis\RedisManager;
 
 class RateLimit
 {
@@ -103,6 +104,6 @@ class RateLimit
             return $_SERVER['HTTP_X_FORWARDED_FOR'];
         }
 
-        return $_SERVER['REMOTE_ADDR'];
+        return $_SERVER['REMOTE_ADDR'] ?? "127.0.0.1";
     }
 }
